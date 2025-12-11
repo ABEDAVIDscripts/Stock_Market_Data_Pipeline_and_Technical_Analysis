@@ -21,23 +21,6 @@ This project demonstrates a fully automated Stock Market Data Pipeline built usi
 <br>
 <br>
 
-### Technologies Used
-
-|          Service/Tool|                 Purpose          | Configuration / Details |
-|---------------------:|---------------------------------:|--------------------------:|
-| AWS EC2        | Airflow host & scheduler        | Ubuntu 20.04, t2.medium, Airflow 2.x |
-| AWS S3          | Data Lake Storage               | Buckets: landing / intermediate / transformed |
-| AWS Lambda      | Technical Indicator Processing  | Python (SMA / RSI / MACD functions), boto3 |
-| AWS Redshift    | Data Warehouse for Analytics    | ra3.xlplus, 1-node cluster |
-| Amazon QuickSight| Dashboard & Visualization      | Standard Edition |
-| Python          | ETL & Lambda logic              | pandas, numpy, requests, boto3 |
-| **APIs**            | Market Data Ingestion           | Alpha Vantage, Yahoo Finance (yfinance) |
-| **IAM Roles & Policies** | Secure Access Control      | S3 → Lambda → Redshift |
-
-
-<br>
-<br>
-
 
 ### Project Structure Diagram
 
@@ -88,5 +71,22 @@ Real-time alerts
 
 <BR>
 <BR>
+
+### Technologies Used
+
+|          Service/Tool|                 Purpose          | Configuration / Details |
+|---------------------:|---------------------------------:|--------------------------:|
+| AWS EC2        | Airflow host & scheduler        | Ubuntu 20.04, t2.medium, Airflow 2.x |
+| AWS S3          | Data Lake Storage               | Buckets: landing / intermediate / transformed |
+| AWS Lambda      | Technical Indicator Processing  | Python (SMA / RSI / MACD functions), boto3 |
+| AWS Redshift    | Data Warehouse for Analytics    | ra3.xlplus, 1-node cluster |
+| Amazon QuickSight| Dashboard & Visualization      | Standard Edition |
+| Python          | ETL & Lambda logic              | pandas, numpy, requests, boto3 |
+| **APIs**            | Market Data Ingestion           | Alpha Vantage, Yahoo Finance (yfinance) |
+| **IAM Roles & Policies** | Secure Access Control      | S3 → Lambda → Redshift |
+
+
+<br>
+<br>
 <BR>
 
