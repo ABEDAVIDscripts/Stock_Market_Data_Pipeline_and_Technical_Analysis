@@ -16,7 +16,7 @@ This project demonstrates a fully automated Stock Market Data Pipeline built usi
 - AWS S3 for multi-layered storage (Landing → Intermediate → Transformed)
 - AWS Lambda for computing SMA, RSI, MACD & consolidating results
 - AWS Redshift as the data warehouse
-- SQL analytics to answer real financial analysis questions
+- SQL analytics to answer real financial stock analysis questions
 
 
 <br>
