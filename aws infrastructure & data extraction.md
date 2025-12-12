@@ -93,6 +93,8 @@ Description: Airflow UI
 <br>
 
 #### 1.5: Create S3 Buckets
+<img width="700" alt="fp landing zone bucket" src="https://github.com/user-attachments/assets/820c7faf-8581-46d7-81a0-75709729f18a" />
+
 Create 3 buckets for data zones:
 - Bucket 1 - Landing Zone:
   - S3 Console → Create Bucket
@@ -470,11 +472,21 @@ Extra: {"region_name": "eu-north-1"}
 #### 4.4: Trigger Dag Via UI
 This will load the json file to the landing zone bucket
 
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+  <img src="https://github.com/user-attachments/assets/004b9386-d77e-4d15-a5ad-a849515fcc70" alt="graph 1" width="45%">
+  <img src="https://github.com/user-attachments/assets/c705b2f7-a511-4deb-9864-32c06e71555e" alt="fp landing zone bucket 2" width="48%">
+</div>
+
+
+
+
 - Airflow UI → Home 
 - Select `financial_market_pipeline`
 - Trigger
 
 <BR>
 <BR>
-
 <BR>
+
+
+
