@@ -1,7 +1,7 @@
 # Data Transformation with Lambda
 
 <BR>
-<BR>
+
 
 Purpose: 
 - Create Lambda functions to process raw stock data
@@ -12,6 +12,7 @@ Purpose:
 <br>
 
 ### 1. Create Lambda Execution Role
+<img width="700" alt="permissions policies" src="https://github.com/user-attachments/assets/fff0a621-f65e-4c89-bbd9-1097c5a7fe5c" />
 
 Create IAM Role for Lambda:
 - AWS Console → IAM → Roles → "Create Role"
@@ -73,6 +74,7 @@ ls -lh pandas-numpy-layer.zip
 These Lambda functions are automatically triggered when new files appear in the Landing Zone bucket, and they save results to the Intermediate bucket.
 
 <br>
+<img width="700" alt="calculate sma" src="https://github.com/user-attachments/assets/dadbdeb7-7d5c-4ea8-b70b-78e1fab2d129" />
 
 #### 3.1: Create Lambda Function - Calculate SMA 
 
@@ -106,7 +108,7 @@ These Lambda functions are automatically triggered when new files appear in the 
 
 - Add script in the Code tab:
 
-``` bash
+``` python
 import json
 import boto3
 import pandas as pd
@@ -276,7 +278,7 @@ def lambda_handler(event, context):
     - Create new event
     - Event name: test_sma
     - Test event code:
-    ```bash
+    ```python
       {
         "Records": [ { "s3": { "bucket": {"name": "fp-landing-zone-bucket"},
         "object": {"key": "AAPL/stock_AAPL_20251106_213430.json"} } } ]
@@ -317,7 +319,7 @@ RSI < 30 = Oversold (stock might rise) <br>
 <br>
 
 - Add code:
-```bash
+```python
 import json
 import boto3
 import pandas as pd
@@ -488,7 +490,7 @@ Timeout: 3 minutes
 <br>
 
 - Add code
-```bash
+```python
 import json
 import boto3
 import pandas as pd
@@ -659,4 +661,5 @@ def lambda_handler(event, context):
 
 <BR>
 <BR>
+
 <BR>
