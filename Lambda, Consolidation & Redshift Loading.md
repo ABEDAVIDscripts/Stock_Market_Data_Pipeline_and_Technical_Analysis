@@ -687,9 +687,8 @@ MACD Output <br>
 
 ## Data Consolidation & Redshift Loading
 
-<BR>
 
-### 1: Create Consolidation Lambda
+### 1. Create Consolidation Lambda
 This Lambda will combine all 3 indicators for each stock into one consolidated JSON file.  
 <br>
  
@@ -1058,6 +1057,7 @@ Create IAM role as default
 
 <br>
 <br>
+
 
 
 
