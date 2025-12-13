@@ -1,6 +1,5 @@
 ## Data Transformation with Lambda, Consolidation and Redshift Loading
 
-<BR>
 
 Purpose: 
 - Create Lambda functions to process raw stock data
@@ -1057,6 +1056,7 @@ Create IAM role as default
 
 <br>
 <br>
+
 
 
 
