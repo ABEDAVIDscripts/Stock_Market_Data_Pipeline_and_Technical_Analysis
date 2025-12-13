@@ -1,8 +1,5 @@
 ## AWS Infrastructure & Data Extraction 
 
-<br>
-
-
 ### 1. AWS Infrastructure Setup
 
 #### 1.1: Quick IAM Setup (If Starting Fresh)
@@ -491,6 +488,7 @@ Output in landing zone bucket <br>
 <BR>
 <BR>
 <BR>
+
 
 
 
