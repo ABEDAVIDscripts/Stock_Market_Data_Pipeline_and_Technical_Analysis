@@ -481,13 +481,14 @@ This will load the json file to the landing zone bucket <br>
 
 Output in landing zone bucket <br>
 <div style="display: flex; justify-content: space-between; gap: 20px;">
-  <img src="https://github.com/user-attachments/assets/0100c558-b5d9-4b7d-82fd-8ae7a78d897d" alt="graph 1" width="45%">
   <img src="https://github.com/user-attachments/assets/c705b2f7-a511-4deb-9864-32c06e71555e" alt="fp landing zone bucket 2" width="48%">
+  <img src="https://github.com/user-attachments/assets/0100c558-b5d9-4b7d-82fd-8ae7a78d897d" alt="graph 1" width="45%">
 </div>
 
 <BR>
 <BR>
 <BR>
+
 
 
 
