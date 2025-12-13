@@ -668,13 +668,13 @@ def lambda_handler(event, context):
 
 <BR>
 
-- RSI Output <br>
+RSI Output <br>
 <img width="700" alt="rsi aapl" src="https://github.com/user-attachments/assets/5d6bf1bf-7d45-4610-b8e7-5dff4b4037ce" />
 
 <BR>
 <BR>
 
-- MACD Output <br>
+MACD Output <br>
 <img width="700" alt="macd aapl" src="https://github.com/user-attachments/assets/9300ef53-00c8-41eb-96fe-c8a7444922e9" />
 
 
@@ -720,7 +720,7 @@ This Lambda will combine all 3 indicators for each stock into one consolidated J
 <br>
 
 - Add the consolidation code: 
-```bash
+```python
 import json
 import boto3
 from datetime import datetime
@@ -973,8 +973,8 @@ def create_csv_data(consolidated):
 Modify Airflow DAG to call the consolidation Lambda after all processing is done. <br>
 
 - Stop airflow standalone
-- Add consolidation task at the end of `previous_task = load_task` <br>
-```bash
+- Add consolidation task at the end of `previous_task = load_task` in `.py file` <br>
+```python
     # This runs AFTER all stocks are processed
     consolidate_task = PythonOperator(
         task_id='consolidate_data',
@@ -996,6 +996,10 @@ Modify Airflow DAG to call the consolidation Lambda after all processing is done
     - Add permissions
   
 - Restart Airflow
+<br>
+
+<img width="700" alt="trigger consolidate" src="https://github.com/user-attachments/assets/9968138c-f3cc-4209-988e-39517af6e612" />
+
 - Trigger the DAG UI
 
 <br>
@@ -1053,5 +1057,6 @@ Create IAM role as default
 
 <br>
 <br>
+
 
 
