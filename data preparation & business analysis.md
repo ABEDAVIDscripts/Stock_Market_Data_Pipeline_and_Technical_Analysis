@@ -605,10 +605,6 @@ ORDER BY symbol;
 - AAPL corrupt data = 7 
 - Confirm the corrupt range for AAPL, to know the range to delete
 
-<img width="700" alt="Confirm the exact corrupted range for AAPL to know what range to delete" src="https://github.com/user-attachments/assets/a4951ecf-0880-4a52-b0e7-55a55858d547" />
-
-<br>
-
 ```sql
 SELECT symbol,
   COUNT(CASE WHEN close > 300 THEN 1 END) AS above_300,
@@ -620,10 +616,12 @@ GROUP BY symbol;
 
 <br>
 
+
 Output <br>
 <img width="700" alt="corrupted range for AAPL" src="https://github.com/user-attachments/assets/297aab19-10f5-4d5d-970a-9b8bb0189de4" />
 
 
+<br>
 <br>
 
 
@@ -654,6 +652,8 @@ Ouput: <br>
 <img width="700" alt="verification result for AAPL delete above 300" src="https://github.com/user-attachments/assets/a3647686-75f8-4a53-8d0b-f13f74a8fa45" />
 
 
+
+<br>
 <br>
 <br>
 <br>
@@ -700,6 +700,8 @@ Output <br>
 <img width="700"  alt="1  RESULT  Which stock had the highest percentage gain or loss over the period" src="https://github.com/user-attachments/assets/9cefca46-e782-4b97-a3a3-750efd78a855" />
 
 <br>
+<br>
+
 
 2. How many buy vs sell signals were generated for each stock?
 ```sql
@@ -713,6 +715,7 @@ FROM stock_data_cleaned
 GROUP BY symbol;
 ```
 
+<br>
 <br>
 
 3. Which stocks frequently hit overbought (RSI > 70) or oversold (RSI < 30) conditions?
@@ -729,6 +732,7 @@ GROUP BY symbol
 ORDER BY percent_overbought DESC, percent_sold DESC;
 ```
 
+<br>
 <br>
 
 
@@ -762,6 +766,7 @@ ORDER BY c.symbol, crossover_date;
 ```
 
 <br>
+<br>
 
 
 5. Is the stock in an uptrend, downtrend, or sideways movement?
@@ -783,6 +788,8 @@ ORDER BY symbol, date;
 ```
 
 <br>
+<br>
+
 
 6. Which stock is most volatile?
 ```SQL
@@ -809,6 +816,7 @@ ORDER BY volatility DESC;
 ```
 
 <BR>
+<br>
 
 
 7. What's the current status of all stocks?
@@ -833,6 +841,8 @@ ORDER BY symbol;
 
 
 <BR>
+<br>
+
 
 8. Which days of the week have the most buy/sell signals?
 ```sql
@@ -846,6 +856,7 @@ FROM stock_data_cleaned
 GROUP BY weekdays
 ORDER BY buy_signals DESC;
 ```
+
 
 
 
