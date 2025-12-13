@@ -1,4 +1,4 @@
-# AWS Infrastructure & Data Extraction 
+## AWS Infrastructure & Data Extraction 
 
 <br>
 
@@ -470,23 +470,28 @@ Extra: {"region_name": "eu-north-1"}
 <br>
 
 #### 4.4: Trigger Dag Via UI
-This will load the json file to the landing zone bucket
+This will load the json file to the landing zone bucket <br>
 
-<div style="display: flex; justify-content: space-between; gap: 20px;">
-  <img src="https://github.com/user-attachments/assets/004b9386-d77e-4d15-a5ad-a849515fcc70" alt="graph 1" width="45%">
-  <img src="https://github.com/user-attachments/assets/c705b2f7-a511-4deb-9864-32c06e71555e" alt="fp landing zone bucket 2" width="48%">
-</div>
+<img width="700"  alt="trigger successful" src="https://github.com/user-attachments/assets/aab5c69e-c040-47fa-8c65-51613eeb23e3" />
 
-
-
+<br>
 
 - Airflow UI → Home 
 - Select `financial_market_pipeline`
 - Trigger
 
+<br>
+
+Output in landing zone bucket <br>
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+  <img src="https://github.com/user-attachments/assets/0100c558-b5d9-4b7d-82fd-8ae7a78d897d" alt="graph 1" width="45%">
+  <img src="https://github.com/user-attachments/assets/c705b2f7-a511-4deb-9864-32c06e71555e" alt="fp landing zone bucket 2" width="48%">
+</div>
+
 <BR>
 <BR>
 <BR>
+
 
 
 
