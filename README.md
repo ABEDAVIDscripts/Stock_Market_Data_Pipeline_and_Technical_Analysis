@@ -57,11 +57,8 @@ Redshift (Time-Series Optimized)
 └───────────────────────────────────────┘  
 ↓  
 ┌────────────────────────────────────────┐  
-QuickSight (Trading Dashboard)  
-Candlestick charts  
-Technical indicators overlay  
-Multi-symbol comparison  
-Real-time alerts  
+Data Preparation  
+Business Analysis  
 └────────────────────────────────────────┘  
 
 </div>
