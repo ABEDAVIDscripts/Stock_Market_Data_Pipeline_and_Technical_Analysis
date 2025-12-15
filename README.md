@@ -1,5 +1,4 @@
 
-
 # Financial Stock Market Data Pipeline and Technical Analysis
 
 This project demonstrates a production-grade ETL pipeline that automates stock market data collection and analysis for 5 major tech stocks (AAPL, AMZN, GOOGL, MSFT, TSLA). The pipeline extracts daily stock prices, calculates 10+ technical indicators, and stores the results in a data warehouse for SQL-based analysis.
@@ -23,46 +22,9 @@ This project demonstrates a fully automated Stock Market Data Pipeline built usi
 <br>
 
 
-### Project Structure Diagram
+### Architecture Flow Diagram
 
-
-
-<div align="center">
-
-┌─────────────────────────────────┐  
-Stock Market Data Pipeline  
-└─────────────────────────────────┘  
-↓  
-Multiple APIs (Alpha Vantage, Yahoo Finance)  
-↓  
-┌───────────────────────────────────────┐  
-Airflow on EC2 (Multi-Symbol Extract)  
-Symbols: AAPL, GOOGL, MSFT, AMZN, TSLA  
-└───────────────────────────────────────┘  
-↓  
-┌───────────────────────────────────────┐  
-S3 Landing Zone (Raw JSON by Symbol)  
-└───────────────────────────────────────┘  
-↓  
-┌───────────────────────────────────────┐  
-Lambda: Parse & Calculate Indicators  
-└───────────────────────────────────────┘  
-↓  
-┌───────────────────────────────────────┐  
-S3 Transformed Zone (CSV + Indicators)  
-└───────────────────────────────────────┘  
-↓  
-┌───────────────────────────────────────┐  
-Redshift Data Warehouse     
-└───────────────────────────────────────┘  
-↓  
-┌────────────────────────────────────────┐  
-Data Preparation  
-Business Analysis  
-└────────────────────────────────────────┘  
-
-</div>
-
+<img width="524" height="532" alt="flow diagram" src="https://github.com/user-attachments/assets/cc07d025-efcf-4e57-976a-4b722bc9d742" />
 
 
 <br>
