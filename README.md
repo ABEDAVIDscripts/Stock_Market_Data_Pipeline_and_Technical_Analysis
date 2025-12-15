@@ -45,7 +45,7 @@ S3 Landing Zone (Raw JSON by Symbol)
 └───────────────────────────────────────┘  
 ↓  
 ┌───────────────────────────────────────┐  
-Lambda 1: Parse & Calculate Indicators  
+Lambda: Parse & Calculate Indicators  
 └───────────────────────────────────────┘  
 ↓  
 ┌───────────────────────────────────────┐  
