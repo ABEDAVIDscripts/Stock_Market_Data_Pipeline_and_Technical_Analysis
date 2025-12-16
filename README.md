@@ -49,7 +49,7 @@ This project demonstrates a fully automated Stock Market Data Pipeline built usi
 <br>
 <br>
 
-****Note: To manage cloud costs, the AWS resources for this data pipeline have been temporarily disabled or removed.
+**Note: To manage cloud costs, the AWS resources for this data pipeline have been temporarily disabled or removed.**
 
 <BR>
 <BR>
