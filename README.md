@@ -49,6 +49,20 @@ This project demonstrates a fully automated Stock Market Data Pipeline built usi
 <br>
 <br>
 
+### Project Documentation
+
+This project is documented across three detailed sections:
+
+- [AWS Infrastructure & Data Extraction](https://github.com/ABEDAVIDscripts/Financial_Stock_Market_Data_Pipeline_and_Technical_Analysis/blob/main/1.%20aws%20infrastructure%20%26%20data%20extraction.md)
+
+- [Lambda Processing, Consolidation & Redshift Loading](https://github.com/ABEDAVIDscripts/Financial_Stock_Market_Data_Pipeline_and_Technical_Analysis/blob/main/2.%20lambda%2C%20consolidation%20%26%20redshift%20loading.md)
+
+- [Data Preparation & Business Analysis](https://github.com/ABEDAVIDscripts/Financial_Stock_Market_Data_Pipeline_and_Technical_Analysis/blob/main/3.%20data%20preparation%20%26%20business%20analysis.md)
+
+
+<br>
+<br>
+
 **Note: To manage cloud costs, the AWS resources for this data pipeline have been temporarily disabled or removed.**
 
 <BR>
